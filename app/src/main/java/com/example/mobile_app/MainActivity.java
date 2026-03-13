@@ -30,6 +30,12 @@ public class MainActivity extends AppCompatActivity {
         adapter = new RoomAdapter(this);
         rvRooms.setAdapter(adapter);
 
+        // Xử lý nút thêm phòng
+        findViewById(R.id.btnAddRoom).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AddRoomActivity.class);
+            startActivity(intent);
+        });
+
     }
 
     // Quan trọng: Khi từ màn hình Thêm/Sửa quay về, phải báo Adapter load lại dữ liệu

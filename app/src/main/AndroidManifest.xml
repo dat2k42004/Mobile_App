@@ -21,6 +21,9 @@
         </activity>
 
         <activity android:name=".activity.RoomDetailActivity" />
+        <activity
+            android:name=".activity.AddRoomActivity"
+            android:label="Thêm phòng mới" />
     </application>
 
 </manifest>

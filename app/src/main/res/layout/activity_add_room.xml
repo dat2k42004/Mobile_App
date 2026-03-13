@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THÔNG TIN PHÒNG TRỌ"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên phòng (ví dụ: Phòng 101)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá thuê (VNĐ)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/edtTenant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên người thuê"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại"
+        android:inputType="phone"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:id="@+id/chkRented"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đã thuê"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LƯU THÔNG TIN"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#2196F3" />
+
+</LinearLayout>
