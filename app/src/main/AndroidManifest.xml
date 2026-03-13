@@ -20,14 +20,19 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.RoomDetailActivity" />
         <activity
             android:name=".activity.AddRoomActivity"
             android:label="Thêm phòng mới" />
 
         <activity
             android:name=".activity.EditRoomActivity"
-            android:label="Sửa thông tin phòng" />
+            android:label="Cập nhật phòng" />
+        <activity
+            android:name=".activity.DeleteRoomActivity"
+            android:label="Xóa phòng"/>
+
+        <activity android:name=".activity.RoomDetailActivity" />
+
     </application>
 
 </manifest>

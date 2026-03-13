@@ -1,4 +1,4 @@
-package com.example.rental_room.activity;
+package com.example.mobile_app.activity;
 
 import android.os.Bundle;
 import android.widget.Button;
