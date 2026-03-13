@@ -1,4 +1,4 @@
-package com.example.rental_room.activity;
+package com.example.mobile_app.activity;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -8,9 +8,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.rental_room.R;
-import com.example.rental_room.model.Room;
-import com.example.rental_room.model.RoomData;
+import com.example.mobile_app.R;
+import com.example.mobile_app.model.Room;
+import com.example.mobile_app.model.RoomData;
 
 import java.util.UUID;
 
