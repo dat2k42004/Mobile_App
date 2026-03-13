@@ -13,7 +13,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mobile_app.R;
+import com.example.mobile_app.activity.DeleteRoomActivity;
 import com.example.mobile_app.activity.RoomDetailActivity;
+import com.example.mobile_app.activity.EditRoomActivity;
 import com.example.mobile_app.model.Room;
 import com.example.mobile_app.model.RoomData;
 
@@ -48,6 +50,15 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
         // handle click Edit button
         holder.btnEdit.setOnClickListener(v -> {
             Intent intent = new Intent(context, EditRoomActivity.class);
+            intent.putExtra("POSITION", position);
+            intent.putExtra("ROOM_OBJ", room);
+            context.startActivity(intent);
+        });
+
+
+        // Nút Xóa
+        holder.btnDelete.setOnClickListener(v -> {
+            Intent intent = new Intent(context, DeleteRoomActivity.class);
             intent.putExtra("POSITION", position);
             intent.putExtra("ROOM_OBJ", room);
             context.startActivity(intent);
