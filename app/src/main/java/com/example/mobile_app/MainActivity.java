@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mobile_app.adapter.RoomAdapter;
+import com.example.mobile_app.activity.AddRoomActivity;
 
 public class MainActivity extends AppCompatActivity {
     RecyclerView rvRooms;
