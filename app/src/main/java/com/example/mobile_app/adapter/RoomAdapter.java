@@ -45,6 +45,13 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
         }
 
 
+        // handle click Edit button
+        holder.btnEdit.setOnClickListener(v -> {
+            Intent intent = new Intent(context, EditRoomActivity.class);
+            intent.putExtra("POSITION", position);
+            intent.putExtra("ROOM_OBJ", room);
+            context.startActivity(intent);
+        });
 
         // view
         holder.itemView.setOnClickListener(v -> {
