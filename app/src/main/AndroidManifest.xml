@@ -24,6 +24,10 @@
         <activity
             android:name=".activity.AddRoomActivity"
             android:label="Thêm phòng mới" />
+
+        <activity
+            android:name=".activity.EditRoomActivity"
+            android:label="Sửa thông tin phòng" />
     </application>
 
 </manifest>
